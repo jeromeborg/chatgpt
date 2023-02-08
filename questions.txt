@@ -1,0 +1,31 @@
+quel est le résultat de cette instruction php
+$i=2;
+echo %i%2 ? 'pair' : 'impair';
+
+ecris moi un cours de php procédural
+Cours de PHP procédural Objectifs: - Comprendre les bases du langage PHP - Apprendre à utiliser des structures de contrôle de flux - Apprendre à créer des fonctions et des classes - Apprendre à manipuler des données - Utiliser des bases de données avec PHP Partie 1: Introduction à PHP - Qu'est-ce que PHP? - Comment fonctionne PHP? - Les principaux concepts et fonctions de base - Les variables et leur type - Les opérateurs et expressions - Les structures de contrôle de flux Partie 2: Fonctions et Classes - Comment créer une fonction - Utiliser des arguments et des valeurs de retour - Comment créer une classe - Utiliser des propriétés et des méthodes - Les modificateurs d'accès Partie 3: Manipulation de données - Comment travailler avec des chaînes de caractères - Comment travailler avec des tableaux - Comment travailler avec des fichiers - Comment travailler avec des objets Partie 4: Bases de données - Introduction aux bases de données - Comment se connecter à une base de données - Comment exécuter des requêtes SQL - Comment récupérer des données - Comment mettre à jour des données - Comment supprimer des données
+
+ecris moi un controller laravel pour le model post
+<?php namespace App\Http\Controllers; use App\Post; use Illuminate\Http\Request; class PostController extends Controller { /** * Display a listing of the resource. * * @return \Illuminate\Http\Response */ public function index() { $posts = Post::all(); return view('posts.index', compact('posts')); } /** * Show the form for creating a new resource. * * @return \Illuminate\Http\Response */ public function create() { return view('posts.create'); } /** * Store a newly created resource in storage. * * @param \Illuminate\Http\Request $request * @return \Illuminate\Http\Response */ public function store(Request $request) { $request->validate([ 'title' => 'required', 'body' => 'required' ]); Post::create($request->all()); return redirect()->route('posts.index') ->with('success','Post created successfully.'); } /** * Display the specified resource. * * @param \App\Post $post * @return \Illuminate\Http\Response */ public function show(Post $post) { return view('posts.show', compact('post')); } /** * Show the form for editing the specified resource. * * @param \App\Post $post * @return \Illuminate\Http\Response */ public function edit(Post $post) { return view('posts.edit', compact('post')); } /** * Update the specified resource in storage. * * @param \Illuminate\Http\Request $request * @param \App\Post $post * @return \Illuminate\Http\Response */ public function update(Request $request, Post $post) { $request->validate([ 'title' => 'required', 'body' => 'required' ]); $post->update($request->all()); return redirect()->route('posts.index') ->with('success','Post updated successfully.'); } /** * Remove the specified resource from storage. * * @param \App\Post $post * @return \Illuminate\Http\Response */ public function destroy(Post $post) { $post->delete(); return redirect()->route('posts.index') ->with('success','Post deleted successfully.'); } }
+
+
+un oeuf de poule est il plus gros qu'un oeuf de vache ?
+Non, les oeufs de vache sont généralement plus gros que les oeufs de poule. Les oeufs de vache ont une plus grande coquille et contiennent généralement plus de protéines et de graisses que les oeufs de poule.
+
+
+Qui est né le premier, l'oeuf ou la poule ?
+L'oeuf est né le premier.
+
+How's it going ?
+It's going well, thank you. How about you?
+
+
+Cómo estás ?
+Estoy bien, ¡gracias!
+
+Zer ari zara?
+Moduz ez da bat egiten. Moduz ez da nahikoa informazioa ematen.
+Vous êtes notre voix et tout ce que nous faisons, les langues, les exercices et bien d'autres choses.
+
+كيف حالكم ؟
+حالنا جيد! شكرا لك على السؤال.

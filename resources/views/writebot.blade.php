@@ -12,9 +12,11 @@
     </form> 
     <br>
     <div id="response">
-        @if (isset($response))
-            {{ $response }}
-        @endif
+        <code>
+        @isset($response)
+            {!! nl2br($response) !!}
+        @endisset
+        </code>
     </div>
 </body>
-</html>=
+</html>
