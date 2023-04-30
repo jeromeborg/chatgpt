@@ -1,0 +1,6 @@
+URL SETTINGS
+https://platform.openai.com
+
+KEYS
+OPENAI_API_KEY=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
+OPENAI_ORGANIZATION=org-NfxzPPkbXcIv0jSHLlF3IFVmgit
